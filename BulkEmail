@@ -1,0 +1,40 @@
+-	Email Remittance Advice - New bulk email functionality for sending remittance advice documents to vendors
+o	Send one email per reconciliation with PDF attachment
+o	Optional "Combine Per Vendor" mode sends one email with multiple PDF attachments
+o	Uses per-vendor email configuration from Document Layouts
+o	Falls back to Vendor Card email if not configured
+o	Preview option to review emails before sending
+o	Only “Archived” reconciliation are included.
+
+-	Custom Email Body Support - Configure Word layouts for email body content
+o	Supports both modern platform layouts and legacy custom layouts
+o	Falls back to professional HTML table format
+
+-	Validation Before Send - All records validated before processing begins
+o	Missing email addresses reported all at once
+o	Prevents partial sends
+
+-	Date Range Filtering - Filter reconciliations by Statement Date
+o	End Date is mandatory
+o	Start Date is optional
+
+Technical Improvements
+
+-	8 integration events for extensibility
+-	Compatible with BC standard layout selection patterns
+-	Inline CSS for cross-email-client compatibility
+-	AppSource ready (OnPrem and SaaS)
+
+Prerequisites
+
+-	Email Account must be configured in Business Central
+-	Vendors should have email addresses configured (Vendor Card or Document Layouts)
+
+---
+
+Known Limitations
+
+Limitation	Workaround
+Combined mode shows same email body for all attachments	Use single mode for personalized bodies
+Word layout requires report to render as HTML	Ensure layout is Word format, not RDLC
+Email body layout must be for Remittance Advice report	Create layout specifically for report 72601633

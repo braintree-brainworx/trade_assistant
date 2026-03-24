@@ -5,7 +5,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 ---
 
 # About Vendor Reconciliations
-The Vendor Reconciliation module of Braintree Trade Assistant allows a business to match the transactions which appear on the creditor’s statement of account, and confirm the amount payable to the creditor.
+The Vendor Reconciliation module of Braintree Trade Assistant allows businesses to match the transactions which appear on their creditors' statements of account, confirm the amount payable to the creditor, calculate deductions and process payments.
 
 ## [Vendor reconciliations: understanding the business process](VRSLearnMore.MD)
 

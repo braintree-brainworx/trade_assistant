@@ -13,3 +13,5 @@ How to set up and run the Debtors Collection module
 How to set up and run Foreign Exchange Cover
 
 ## [Landed Cost](LandedCost/LandedCost.MD)
+(Coming Soon!)
+How to manage landed costs on inventory
