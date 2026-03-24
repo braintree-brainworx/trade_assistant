@@ -3,7 +3,7 @@ Trade Assistant brings together useful functions related to the management of Su
 
 ![alt text](image.png)
 
-## [Vendor Reconciliation](Vendor Recon/VendorRecon.md)
+## [Vendor Reconciliation](VendorRecon/VendorRecon.md)
 How to set up and run the Vendor Reconciliation module
 
 ## [Debtors Collection Management](DCM/DebtorsCollection.md)

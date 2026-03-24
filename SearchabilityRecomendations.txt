@@ -1,0 +1,582 @@
+TRADE ASSISTANT SITE - SEO & AI SEARCHABILITY RECOMMENDATIONS
+================================================================
+Generated: March 24, 2026
+
+================================================================================
+CRITICAL PRIORITY
+================================================================================
+
+1. FIX URL STRUCTURE
+   Issue: Folder names contain spaces ('Vendor Recon/', 'Landed Cost/')
+   Impact: Creates encoded URLs like %20 which hurt SEO
+   Recommendation: Rename folders to use hyphens:
+   - 'Vendor Recon/' → 'vendor-recon/'
+   - 'Landed Cost/' → 'landed-cost/'
+   - Update all links in navigation.html and markdown files accordingly
+
+2. ADD STRUCTURED DATA (Schema.org)
+   Missing: Product, SoftwareApplication, HowTo, and Organization schemas
+   
+   Add to _includes/head-custom.html:
+   - Organization schema for Braintree
+   - SoftwareApplication schema for Trade Assistant
+   - HowTo schema for tutorial pages
+   - Breadcrumb schema for navigation hierarchy
+   
+   Example JSON-LD:
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "SoftwareApplication",
+     "name": "Trade Assistant",
+     "applicationCategory": "BusinessApplication",
+     "operatingSystem": "Microsoft Dynamics 365 Business Central",
+     "description": "Supply Chain management functions for Microsoft Dynamics 365 Business Central",
+     "provider": {
+       "@type": "Organization",
+       "name": "Braintree"
+     }
+   }
+   </script>
+
+3. CREATE ESSENTIAL SEO FILES
+   - robots.txt (in root): Allow crawling, reference sitemap
+     Example:
+     User-agent: *
+     Allow: /
+     Sitemap: https://yourdomain.com/sitemap.xml
+   
+   - sitemap.xml: Add jekyll-sitemap plugin to _config.yml
+     Add to _config.yml:
+     plugins:
+       - jekyll-sitemap
+   
+   - favicon.ico: Currently commented out in head-custom.html - add proper favicon
+     Uncomment and add actual favicon file
+
+4. IMPLEMENT OPEN GRAPH & TWITTER CARDS
+   Add to _layouts/default.html in <head> section:
+   
+   <meta property="og:title" content="{{ page.title | default: site.title }}">
+   <meta property="og:description" content="{{ page.description | default: site.description }}">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="{{ page.url | absolute_url }}">
+   <meta property="og:image" content="{{ '/images/logo.jpg' | absolute_url }}">
+   <meta property="og:site_name" content="Trade Assistant Documentation">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+   <meta name="twitter:image" content="{{ '/images/logo.jpg' | absolute_url }}">
+
+================================================================================
+HIGH PRIORITY
+================================================================================
+
+5. ADD CANONICAL URLS
+   In _layouts/default.html <head> section:
+   <link rel="canonical" href="{{ page.url | absolute_url }}">
+   
+   This prevents duplicate content issues and helps search engines understand
+   the primary URL for each page.
+
+6. IMPROVE CONTENT METADATA
+   Every markdown file needs enhanced frontmatter:
+   
+   Current format:
+   ---
+   layout: default
+   title: Vendor Reconciliation for Business Central
+   description: Support and documentation...
+   ---
+   
+   Enhanced format:
+   ---
+   layout: default
+   title: Vendor Reconciliation for Business Central
+   description: Support and documentation for Braintree's Vendor Reconciliation extension
+   keywords: vendor reconciliation, business central, dynamics 365, creditor statements, payment processing, trade assistant
+   author: Braintree
+   last_modified: 2026-03-24
+   topic: Vendor Management
+   audience: Finance Professionals, Accountants
+   difficulty: Intermediate
+   ---
+
+7. OPTIMIZE IMAGE ALT TEXT
+   Current issues:
+   - Many images use generic "alt text" or "image.png"
+   - Missing descriptive text for screen readers and SEO
+   
+   Examples of improvements:
+   - "alt text" → "Trade Assistant dashboard showing vendor reconciliation module"
+   - "image.png" → "Forward Exchange Contract setup screen in Business Central"
+   - Empty alt → "FEC contract creation form with currency selection dropdown"
+   
+   Files to update:
+   - README.md: ![alt text](image.png)
+   - All FEC/*.md files with screenshots
+   - All DCM/*.md files with screenshots
+   - All Vendor Recon/*.md files with screenshots
+
+8. ADD LANGUAGE & GEO META TAGS
+   In _layouts/default.html, update <html> tag:
+   <html lang="en-US">
+   
+   Add to <head>:
+   <meta name="language" content="English">
+   <meta name="geo.region" content="US">
+   <meta http-equiv="content-language" content="en-US">
+
+9. ENHANCE _config.yml
+   Add comprehensive metadata:
+   
+   Current _config.yml is minimal. Add:
+   
+   title: Welcome to Braintree Support
+   description: Documentation, Support and Resources for Braintree's Trade Assistant Extension to Microsoft Dynamics 365 Business Central
+   theme: jekyll-theme-cayman
+   
+   # Add these:
+   url: "https://yourdomain.com"  # Required for absolute URLs - UPDATE WITH ACTUAL URL
+   baseurl: ""
+   author: Braintree
+   lang: en-US
+   keywords: 
+     - Business Central
+     - Dynamics 365
+     - Supply Chain Management
+     - Vendor Reconciliation
+     - Debtors Collection
+     - Forward Exchange Contracts
+     - Landed Cost
+     - Trade Assistant
+   
+   # SEO plugins
+   plugins:
+     - jekyll-sitemap
+     - jekyll-seo-tag
+   
+   github:
+     is_project_page: false
+
+================================================================================
+MEDIUM PRIORITY
+================================================================================
+
+10. ADD JSON-LD STRUCTURED DATA
+    Create _includes/structured-data.html with complete schema:
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Trade Assistant",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Microsoft Dynamics 365 Business Central",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "provider": {
+        "@type": "Organization",
+        "name": "Braintree",
+        "url": "{{ site.url }}"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Vendor Reconciliation",
+        "Debtors Collection Management",
+        "Forward Exchange Contracts",
+        "Landed Cost Management"
+      ]
+    }
+    </script>
+    
+    Include in default.html: {% include structured-data.html %}
+
+11. IMPROVE HEADING HIERARCHY
+    Ensure logical structure:
+    - Single H1 per page (page title)
+    - Logical H2 → H3 → H4 progression
+    - No skipping levels (H2 → H4)
+    
+    Pages to review:
+    - FEC/FEC.md: Good structure (H1 > H2)
+    - Vendor Recon pages: Verify hierarchy
+    - DCM pages: Verify hierarchy
+
+12. ADD BREADCRUMB NAVIGATION
+    Create _includes/breadcrumbs.html:
+    
+    <nav aria-label="Breadcrumb">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="{{ '/' | relative_url }}">
+            <span itemprop="name">Home</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <!-- Add dynamic breadcrumb generation based on page.url -->
+      </ol>
+    </nav>
+    
+    Include in default.html before main content.
+
+13. ENABLE GOOGLE ANALYTICS
+    In _includes/head-custom.html:
+    - Currently commented out: {% include head-custom-google-analytics.html %}
+    - Uncomment and configure with tracking ID
+    - Create head-custom-google-analytics.html with GA4 tracking code
+
+14. ADD INTERNAL LINKING STRATEGY
+    Current issues:
+    - Limited cross-linking between modules
+    - Abbreviations not linked to definitions
+    - Related topics not connected
+    
+    Recommendations:
+    - Create a glossary page defining DCM, VRS, FEC, BC, GRV, etc.
+    - Link first use of each abbreviation to glossary
+    - Add "Related Topics" section to each page
+    - Cross-link between related features
+    
+    Example additions:
+    - VRS pages mention "payment processing" → link to payment sections
+    - DCM pages mention "customer accounts" → link to customer setup
+    - FEC pages mention "purchase orders" → link to PO documentation
+
+15. OPTIMIZE PAGE LOAD SPEED
+    Improvements:
+    - Add lazy loading to images: <img loading="lazy" ...>
+    - Preconnect to external resources (Google Fonts already done)
+    - Minify CSS/JS in production
+    - Optimize image sizes (compress screenshots)
+    - Use WebP format for images where supported
+    - Enable browser caching headers
+    - Consider CDN for static assets
+
+================================================================================
+AI SEARCHABILITY SPECIFIC
+================================================================================
+
+16. ENHANCE CONTENT FOR AI UNDERSTANDING
+    Add clear context paragraphs:
+    
+    Example structure for each major page:
+    
+    # [Module Name]
+    
+    ## What is [Module Name]?
+    [Clear definition in 1-2 sentences]
+    
+    ## Why use [Module Name]?
+    [Business value and problems it solves]
+    
+    ## Who should use [Module Name]?
+    [Target audience and use cases]
+    
+    ## Key Features
+    [Bullet list of main capabilities]
+    
+    [Rest of content...]
+    
+    Always define abbreviations on first use:
+    - DCM → Debtors Collection Management (DCM)
+    - VRS → Vendor Reconciliation System (VRS)
+    - FEC → Forward Exchange Contracts (FEC)
+    - BC → Business Central (BC)
+
+17. ADD SEMANTIC HTML5 ELEMENTS
+    Current usage (good):
+    - <main>, <aside>, <nav>, <header>
+    
+    Add:
+    - <article> wrapper around main content
+    - <section> for distinct sections within articles
+    - <time datetime="..."> for dates in release notes
+    - <figure> and <figcaption> for images
+    - <details> and <summary> already used in WhatsNew.md (excellent!)
+    
+    Example for images:
+    <figure>
+      <img src="screenshot.png" alt="Description">
+      <figcaption>Figure 1: FEC Contract Setup Screen</figcaption>
+    </figure>
+
+18. IMPROVE CONTENT COMPLETENESS
+    Issues to address:
+    
+    - LandedCost/LandedCost.MD shows "(Coming Soon!)"
+      → Complete documentation or remove from navigation
+    
+    - Add troubleshooting sections to each module:
+      * Common errors and solutions
+      * FAQ section
+      * Known limitations
+    
+    - Add "Related Topics" sections:
+      * Link to prerequisites
+      * Link to related modules
+      * Link to advanced topics
+    
+    - Include real-world examples:
+      * Step-by-step scenarios
+      * Before/after comparisons
+      * Best practices
+
+19. ADD PAGE-SPECIFIC METADATA FOR AI
+    Enhance frontmatter with AI-friendly context:
+    
+    ---
+    layout: default
+    title: Vendor Reconciliation for Business Central
+    description: Support and documentation...
+    
+    # AI-friendly metadata
+    topic: Vendor Management
+    audience: Finance Professionals, Accountants, AP Managers
+    difficulty: Intermediate
+    time_to_complete: 15-20 minutes
+    version: Business Central 27.2
+    prerequisites:
+      - Business Central setup complete
+      - Vendor accounts configured
+      - User permissions assigned
+    related_modules:
+      - Payment Processing
+      - Accounts Payable
+    ---
+
+20. CREATE SUMMARY BLOCKS
+    Add TL;DR summaries at top of long pages:
+    
+    <div class="summary" role="doc-abstract" style="border-left: 4px solid #157878; padding: 1em; margin: 1em 0; background: #f5f5f5;">
+      <strong>Summary:</strong> This guide explains how to reconcile vendor statements 
+      in 3 simple steps: import statement, match transactions, and generate payments.
+      Estimated time: 15 minutes.
+    </div>
+    
+    Place after H1 title, before main content.
+
+================================================================================
+CONTENT RECOMMENDATIONS
+================================================================================
+
+21. ADD VIDEO TRANSCRIPTS
+    If videos exist in Resources/Videos.md:
+    - Provide full text transcripts
+    - Include timestamped sections
+    - Make transcripts searchable
+    - Improves accessibility and AI indexing
+
+22. CREATE COMPARISON TABLES
+    Add feature matrix pages:
+    - Module comparison (VRS vs DCM vs FEC)
+    - Version differences
+    - Feature availability by plan/license
+    - Competitor comparisons (if applicable)
+
+23. ADD CODE EXAMPLES
+    If API/integration exists:
+    - Show sample API calls
+    - Include PowerShell scripts
+    - Provide import/export formats
+    - Document automation options
+
+24. INCLUDE PDF LINKS PROPERLY
+    If downloadable PDFs exist:
+    - Add rel="nofollow" to download links
+    - Use clear link text ("Download User Guide (PDF, 2MB)")
+    - Add file size and format information
+    - Consider PDF accessibility (tagged PDFs)
+
+25. ADD LAST UPDATED DATES
+    Show content freshness:
+    
+    In frontmatter:
+    last_modified: 2026-03-24
+    
+    Display in layout:
+    {% if page.last_modified %}
+    <p class="last-updated">Last updated: {{ page.last_modified | date: "%B %d, %Y" }}</p>
+    {% endif %}
+
+================================================================================
+TECHNICAL SEO
+================================================================================
+
+26. IMPLEMENT SECURITY HEADERS
+    If hosting on GitHub Pages:
+    - Ensure HTTPS is enabled (should be automatic)
+    - Verify SSL certificate is valid
+    - Check for mixed content warnings
+    - Consider security headers (CSP, X-Frame-Options)
+
+27. ADD RSS/ATOM FEED
+    For release notes updates:
+    
+    Add to _config.yml:
+    plugins:
+      - jekyll-feed
+    
+    Customize feed:
+    feed:
+      path: feed.xml
+      collections:
+        - releases
+
+28. CREATE 404 PAGE
+    Create 404.html in root:
+    
+    ---
+    layout: default
+    title: Page Not Found
+    permalink: /404.html
+    ---
+    
+    # 404 - Page Not Found
+    
+    The page you're looking for doesn't exist.
+    
+    [Return to Home](/)
+    
+    Or try searching:
+    - [Vendor Reconciliation](/vendor-recon/)
+    - [Debtors Collection](/dcm/)
+    - [Forward Exchange Contracts](/fec/)
+
+29. ADD SKIP LINKS
+    Already implemented (excellent!):
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    
+    Consider adding:
+    - Skip to navigation
+    - Skip to search
+    - Skip to footer
+
+30. TEST MOBILE RESPONSIVENESS
+    Already have viewport meta tag (good):
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    Test on:
+    - Mobile devices (iOS, Android)
+    - Tablets
+    - Different screen sizes
+    - Touch interactions
+    - Mobile navigation
+
+================================================================================
+MEASUREMENT & VALIDATION
+================================================================================
+
+TOOLS TO USE:
+
+1. Google Search Console
+   - Submit sitemap
+   - Monitor indexing status
+   - Track search queries
+   - Identify crawl errors
+
+2. Bing Webmaster Tools
+   - Submit sitemap
+   - Monitor Bing indexing
+   - Track Bing-specific metrics
+
+3. Schema.org Validation
+   - Use https://validator.schema.org/
+   - Test all structured data
+   - Fix validation errors
+
+4. Google Rich Results Test
+   - Test each page type
+   - Verify rich snippets
+   - Check mobile compatibility
+
+5. Core Web Vitals
+   - Monitor LCP (Largest Contentful Paint)
+   - Track FID (First Input Delay)
+   - Measure CLS (Cumulative Layout Shift)
+
+6. Lighthouse Audit
+   - Run in Chrome DevTools
+   - Check Performance, Accessibility, SEO
+   - Address flagged issues
+
+7. Mobile-Friendly Test
+   - Google's Mobile-Friendly Test tool
+   - Verify responsive design
+   - Fix mobile usability issues
+
+8. Page Speed Insights
+   - Test load times
+   - Optimize based on recommendations
+   - Monitor over time
+
+================================================================================
+IMPLEMENTATION PRIORITY ORDER
+================================================================================
+
+WEEK 1 - Quick Wins:
+1. Add Open Graph tags
+2. Add canonical URLs
+3. Fix image alt text
+4. Enable jekyll-sitemap plugin
+5. Add robots.txt
+
+WEEK 2 - Content Improvements:
+6. Enhance all frontmatter metadata
+7. Define abbreviations on first use
+8. Add summary blocks to long pages
+9. Improve heading hierarchy
+10. Add internal links
+
+WEEK 3 - Structural Changes:
+11. Rename folders (remove spaces)
+12. Add structured data (JSON-LD)
+13. Implement breadcrumbs
+14. Add 404 page
+15. Create glossary page
+
+WEEK 4 - Advanced Features:
+16. Enable Google Analytics
+17. Add RSS feed
+18. Create comparison tables
+19. Add "Related Topics" sections
+20. Implement lazy loading
+
+ONGOING:
+- Monitor Search Console
+- Update last_modified dates
+- Add new content with proper metadata
+- Track AI assistant citations
+- Optimize based on analytics
+
+================================================================================
+NOTES & CONSIDERATIONS
+================================================================================
+
+* Some recommendations require hosting configuration (robots.txt, security headers)
+  - Verify capabilities with hosting provider
+  - GitHub Pages has some limitations
+
+* Breaking changes (folder renaming) require careful planning:
+  - Create redirects for old URLs
+  - Update all internal links
+  - Announce changes to users
+  - Consider implementing gradually
+
+* AI searchability is an emerging field:
+  - Monitor how AI assistants cite your content
+  - Adjust based on observed patterns
+  - Stay updated on AI crawling guidelines
+
+* Balance SEO with user experience:
+  - Don't over-optimize at expense of readability
+  - Keep content natural and helpful
+  - Focus on solving user problems
+
+================================================================================
+END OF RECOMMENDATIONS
+================================================================================

@@ -1,0 +1,74 @@
+---
+layout: default
+title: Page Not Found - Trade Assistant
+description: The page you're looking for doesn't exist
+permalink: /404.html
+---
+
+<style>
+  .error-404 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .error-404 h1 {
+    font-size: 6rem;
+    margin: 0;
+    color: #157878;
+  }
+  
+  .error-404 h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .error-404 p {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .error-404 .quick-links {
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .error-404 .quick-links li {
+    margin: 0.5rem 0;
+  }
+  
+  .error-404 .quick-links a {
+    color: #157878;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .error-404 .quick-links a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="error-404">
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+  
+  <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
+  
+  <p><a href="{{ '/' | relative_url }}" class="btn">Return to Home</a></p>
+  
+  <div style="margin-top: 3rem;">
+    <h3>Popular Pages</h3>
+    <ul class="quick-links">
+      <li><a href="{{ '/Vendor Recon/VendorRecon' | relative_url }}">Vendor Reconciliation</a></li>
+      <li><a href="{{ '/DCM/DebtorsCollection' | relative_url }}">Debtors Collection Management</a></li>
+      <li><a href="{{ '/FEC/FEC' | relative_url }}">Forward Exchange Contracts</a></li>
+      <li><a href="{{ '/Resources/WhatsNew' | relative_url }}">Release Notes</a></li>
+      <li><a href="{{ '/Resources/Downloads' | relative_url }}">Downloads</a></li>
+      <li><a href="{{ '/Resources/Videos' | relative_url }}">Videos</a></li>
+    </ul>
+  </div>
+  
+  <p style="margin-top: 2rem; color: #666; font-size: 0.9rem;">
+    If you believe this is an error, please contact support.
+  </p>
+</div>

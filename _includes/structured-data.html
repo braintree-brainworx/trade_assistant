@@ -1,0 +1,70 @@
+<!-- Structured Data (JSON-LD) for SEO and AI Searchability -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Trade Assistant",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Microsoft Dynamics 365 Business Central",
+  "description": "{{ page.description | default: site.description }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "Braintree",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Vendor Reconciliation",
+    "Debtors Collection Management",
+    "Forward Exchange Contracts",
+    "Landed Cost Management"
+  ],
+  "softwareVersion": "27.2"
+}
+</script>
+
+{% if page.url != "/" %}
+<!-- Breadcrumb Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Organization Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Braintree",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "logo": "{{ '/images/logo.jpg' | absolute_url }}",
+  "description": "{{ site.description }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "availableLanguage": "English"
+  }
+}
+</script>

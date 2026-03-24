@@ -1,0 +1,15 @@
+# robots.txt for Trade Assistant Documentation
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://braintree-by-vox.github.io/trade_assistant/sitemap.xml
+
+# Optional: Crawl delay (in seconds) - uncomment if needed
+# Crawl-delay: 1
+
+# Disallow specific paths if needed (examples commented out):
+# Disallow: /assets/
+# Disallow: /images/

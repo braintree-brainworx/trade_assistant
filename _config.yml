@@ -1,5 +1,29 @@
 title: Welcome to Braintree Support
-description:  Documentation, Support and Resources for Braintree's Trade Assistant Extension to Microsoft Dynamics 365 Business Central
+description: Documentation, Support and Resources for Braintree's Trade Assistant Extension to Microsoft Dynamics 365 Business Central
 theme: jekyll-theme-cayman
+
+# SEO Settings
+url: "https://braintree-by-vox.github.io"  # UPDATE THIS with your actual domain
+baseurl: "https://braintree-by-vox.github.io/trade_assistant/"
+author: Braintree
+lang: en-US
+
+# Keywords for SEO
+keywords:
+  - Business Central
+  - Dynamics 365
+  - Supply Chain Management
+  - Vendor Reconciliation
+  - Debtors Collection
+  - Forward Exchange Contracts
+  - Landed Cost
+  - Trade Assistant
+  - ERP Extension
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 github:
   is_project_page: false
