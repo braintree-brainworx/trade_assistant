@@ -8,7 +8,7 @@
 </ul></details>
 
 <details style="font-size: 0.85em;">
-<summary>DCM: New report - Collection Note(click for details)</summary>
+<summary>DCM: New report - Collection Note (click for details)</summary>
 <ul>
 <li>From a collection note, an option is added to generate a RDLC report of the collection note.</li>
 </ul></details>
@@ -24,7 +24,6 @@
 <ul>
 <li>Deduction code lookup to Return Reasons table is filtered for entries with a GL account number. Return reasons not linked to GL are not available for selection.</li>
 </ul></details>
-
 
 **Release 27.2.20260219.1 (27.2.4)**
 <details style="font-size: 0.85em;">
