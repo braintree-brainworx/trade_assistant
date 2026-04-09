@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="icon" type="image/jpeg" href="{{ '/images/logo.jpg' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/logo.jpg' | relative_url }}">
     
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="{{ page.keywords | default: site.keywords | join: ', ' }}">

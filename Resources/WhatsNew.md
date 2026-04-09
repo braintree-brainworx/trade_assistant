@@ -1,5 +1,12 @@
 ## Release notes
 
+**Release 27.4.20260409.1 (27.2.7)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost</summary>
+<ul>
+<li>Accrue item charges into GL provision accounts when primary products are received, and reverse accrual when item charges are invoiced</li>
+</ul></details>
+
 **Release 27.2.20260327.1 (27.2.7)**
 <details style="font-size: 0.85em;">
 <summary>DCM: Cosmetic changes (click for details)</summary>
