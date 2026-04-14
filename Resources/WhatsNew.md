@@ -1,5 +1,19 @@
 ## Release notes
 
+**Release 27.4.20260409.1 (27.4.2)**
+<details style="font-size: 0.85em;">
+<summary>Posted Sales Invoice List</summary>
+<ul>
+<li>Add Last Date Emailed to page</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Dispute State</summary>
+<ul>
+<li>On Collections Link page, Reason Code is now linked to new table Dispute State</li>
+<li>When a reason is entered, the Dispute State on Customer Ledger Entry and posted invoice is updated.</li>
+</ul></details>
+
 **Release 27.4.20260409.1 (27.2.7)**
 <details style="font-size: 0.85em;">
 <summary>Landed Cost</summary>
