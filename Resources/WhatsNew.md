@@ -1,5 +1,21 @@
 ## Release notes
 
+**Release 27.4.20260409.1 (27.5.0)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost - Purchase Order</summary>
+<ul>
+<li>New flowfields added to purchase lines, summarising accrued values on receipts</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>Landed Cost - Setup Improvements</summary>
+<ul>
+<li>Added dedicated setup page to edit purchase accrual settings on general posting setups</li>
+<li>When activating accruals, GL and Item charges are activated automatically</li>
+<li>Added default accrual account. When changed, user has an option to update all general posting setups</li>
+<li>When a new General Posting Setup is created, purchase accrual account is copied from setup.</li>
+</ul></details>
+
 **Release 27.4.20260409.1 (27.4.2)**
 <details style="font-size: 0.85em;">
 <summary>Posted Sales Invoice List</summary>
