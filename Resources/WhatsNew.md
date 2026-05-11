@@ -1,5 +1,12 @@
 ## Release notes
 
+**Release 27.4.20260511.1 (27.5.0)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost - Purchase Order</summary>
+<ul>
+<li>New flowfields added to purchase lines, summarising accrued values on receipts</li>
+</ul></details>
+
 **Release 27.4.20260409.1 (27.5.0)**
 <details style="font-size: 0.85em;">
 <summary>Landed Cost - Purchase Order</summary>

@@ -4,15 +4,13 @@ title: Configure Vendor Reconciliation
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
 
-# Configure Vendor Reconciliation
-
 ## Getting Started
 - [Installing from Appsource](#installing-from-appsource)
 - [How to request a license registration key](#how-to-request-a-licence-registration-key)
 - [Number Series](#number-series)
 - [User Setups](#user-setups)
 - [Workflow Setup](#workflow-setups)
-- [Deduction Codes](#deduction-codes)
+- [Dispute Reasons](#dispute-reasons)
 - [Withholding Tax](#withholding-tax)
 
 ## Installing from Appsource
@@ -67,11 +65,13 @@ For each recon administrator, fill in the fields:
 
 Note: it is a good idea to create separate payment batches for each administrator.
 
-## Deduction Codes
+## Dispute Reasons
 When processing vendor reconciliations, you have an option to make deductions from the invoices being settled (over and above payment discount, which is handled by standard business central functionality). To do this, you will need to configure deduction codes.
 From the Trade Assistant Setup page, select 'Deduction Codes' from the menu. The Return Reasons list will open.
 
-![alt text](openReasonCodes.png)
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 
 For each account that you would like to use as a deduction, you need to enter
 - Account type (default G/L account)
