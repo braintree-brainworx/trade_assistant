@@ -2,9 +2,10 @@
 
 **Release 27.4.20260511.1 (27.5.0)**
 <details style="font-size: 0.85em;">
-<summary>Landed Cost - Purchase Order</summary>
+<summary>Vendor Recon Payment - message to recipient</summary>
 <ul>
-<li>New flowfields added to purchase lines, summarising accrued values on receipts</li>
+<li>New field on Trade Assistant Setup: Message to Recipient. Not visible if the Banking integration app is also installed</li>
+<li>When generating a payment from the Vendor Recon, the Message to Recipient column on the journal is populated from the Trade Assistant Setup.</li>
 </ul></details>
 
 **Release 27.4.20260409.1 (27.5.0)**
