@@ -13,7 +13,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 - [Dispute Reasons](#dispute-reasons)
 - [Withholding Tax](#withholding-tax)
 
-## Installing from Appsource
+## Installing from AppSource
 Open your Microsoft Dynamics Business Central tenant.
 Search for Extension Management.
 From the extension management page, select 'AppSource Gallery'. This may take a minute or two to open.
@@ -38,7 +38,6 @@ From the list of apps, select 'BCP-TRADEASSIST-VRS', then select 'Request Subscr
 An email will be sent to the Braintree service desk.
 
 ## Number Series
-
 On installation, the system will create a new number series and insert it in the setup table. You can edit this if required.
 
 ![alt text](NoSeries.png)
@@ -85,5 +84,11 @@ If you will be processing withholding tax for creditors:
 - Select a Withholding Tax provision account type
 - Select a withholding tax provision account number
 
+## Message to Recipient
+If you are not running Braintree's banking integration app, you may wish to configure the field 'Message to Recipient'. (The field will not be visible if you have installed the banking app). 
+
+The text captured in this field will be copied to the 'Message to Recipient' on the payment journal when creating a payment from a vendor reconciliation.
+
+![alt text](image-4.png)
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
