@@ -1,5 +1,13 @@
 ## Release notes
 
+**Release 27.5.20260527.1 (27.5.2)**
+<details style="font-size: 0.85em;">
+<summary>Vendor Recon Payment - Description</summary>
+<ul>
+<li>Description on Vendor line is set to vendor name</li>
+<li>Payment Reference on multi-line journal always uses Vendor Recon number.</li>
+</ul></details>
+
 **Release 27.4.20260511.1 (27.5.0)**
 <details style="font-size: 0.85em;">
 <summary>Vendor Recon Payment - message to recipient</summary>
