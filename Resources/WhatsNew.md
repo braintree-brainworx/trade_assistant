@@ -1,5 +1,12 @@
 ## Release notes
 
+**Release 27.5.20260605.2 (27.5.3)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost: Undo Receipt</summary>
+<ul>
+<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
+</ul></details>
+
 **Release 27.5.20260527.1 (27.5.2)**
 <details style="font-size: 0.85em;">
 <summary>Vendor Recon Payment - Description</summary>
