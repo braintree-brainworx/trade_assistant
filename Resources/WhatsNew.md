@@ -1,6 +1,6 @@
 ## Release notes
 
-**Release 27.5.20260605.2 (27.5.3)**
+**Release 28.0.20260609 (28.0.1)**
 <details style="font-size: 0.85em;">
 <summary>Landed Cost: Undo Receipt</summary>
 <ul>
