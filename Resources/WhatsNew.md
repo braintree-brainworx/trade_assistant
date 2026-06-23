@@ -1,4 +1,17 @@
-## Release notes
+---
+layout: NewLayout
+title: Business Central for Asset Managers
+description: Enhanced functionality for fixed asset management in Microsoft Dynamics 365 Business Central
+---
+
+## Release notes1
+
+**Release 28.0.20260623 (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost: Undo Receipt</summary>
+<ul>
+<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
+</ul></details>
 
 **Release 28.0.20260609 (28.0.1)**
 <details style="font-size: 0.85em;">
