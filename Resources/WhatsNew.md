@@ -1,7 +1,7 @@
 ---
 layout: NewLayout
-title: Business Central for Asset Managers
-description: Enhanced functionality for fixed asset management in Microsoft Dynamics 365 Business Central
+title: Trade Assistant
+description: Enhanced functionality for financial adminsitrators in Microsoft Dynamics 365 Business Central
 ---
 
 ## Release notes1
