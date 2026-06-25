@@ -15,7 +15,7 @@ Supplementary costs are defined under the Item Charges table. The table allows y
 
 From the Trade Assistant Setup page, select Landed Cost -> Item Charges
 
-  ![alt text](Screenshots/image.png)
+  ![alt text](Screenshots/image-4.png)
 
   ![alt text](image.png)
 
@@ -24,7 +24,7 @@ Landed cost templates are used to define groups of item charges that should be a
 
 From the Trade Assistant Setup page, select Landed Cost -> Item Charges
 
-  ![alt text](Screenshots/image-1.png)
+  ![alt text](Screenshots/image-5.png)
 
   ![alt text](image-4.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: NewLayout
 title: Trade Assistant
-description: Enhanced functionality for financial adminsitrators in Microsoft Dynamics 365 Business Central
+description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
 ---
 
 ## Release notes1

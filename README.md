@@ -1,7 +1,14 @@
+---
+layout: NewLayout
+title: Trade Assistant
+description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
+---
+
 # Trade Assistant
 Trade Assistant brings together useful functions related to the management of Supply Chain in Microsoft Dynamics 365 Business Central.
 
 ![alt text](image.png)
+[!alt text](diagrams/Overview.drawio.png),
 
 ## [Vendor Reconciliation](VendorRecon/VendorRecon.md)
 How to set up and run the Vendor Reconciliation module
