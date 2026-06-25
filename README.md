@@ -3,7 +3,7 @@ Trade Assistant brings together useful functions related to the management of Su
 
 ![alt text](Overview.drawio.png)
 
---
+---
 
 ![alt text](image.png)
 
