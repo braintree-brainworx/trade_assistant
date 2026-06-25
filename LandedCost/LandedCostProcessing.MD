@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: NewLayout
 title: Braintree Landed Cost 
 description: Support and documentation for Braintree's Landed Cost extension to Microsoft Dynamics 365 Business Central
 ---
