@@ -3,12 +3,13 @@ layout: default
 title: Vendor Reconciliation for Business Central
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
+
 # Run Vendor Reconciliation
 
 ## Content
-- [Start a new recon](#start-a-new-vendor-recon)
-- [Load transactions](#load-transactions)
-- [Reconcile Transactions](#reconcile-transactions)
+- [Start a new vendor reconciliation](#start-a-new-vendor-recon)
+- [Load vendor transactions](#load-transactions)
+- [Reconcile transactions](#reconcile-transactions)
 - [Handling Settlement Discounts](#handling-settlement-discounts)
 - [Capture Deductions](#capture-deductions)
 - [Calculate payments](#calculate-the-payment)
