@@ -4,7 +4,7 @@ title: Trade Assistant
 description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
 ---
 
-## Release notes1
+## Release notes
 
 **Release 28.0.20260819.1 (28.0.2)**
 <details style="font-size: 0.85em;">
