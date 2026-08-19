@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: NewLayout
 title: Debtors Collection Management for Business Central
 description: Support and documentation for Braintree's Debtors Collection extension to Microsoft Dynamics 365 Business Central
 ---
@@ -12,6 +12,7 @@ description: Support and documentation for Braintree's Debtors Collection extens
 - [Collection Notes](#collection-notes)
 - [Age Analysis](#print-age-analysis)
 - [Find a document](#find-a-document)
+- [Edit posted document info](ModifyPostedDocs.md)
   
 ## Open Dashboard
 Search for 'Debtors Collection', and select the page.

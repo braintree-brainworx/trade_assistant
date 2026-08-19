@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: NewLayout
 title: Configure Vendor Reconciliation 
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
-
-# Configure Vendor Reconciliation
 
 ## Getting Started
 - [Installing from Appsource](#installing-from-appsource)
@@ -12,10 +10,10 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 - [Number Series](#number-series)
 - [User Setups](#user-setups)
 - [Workflow Setup](#workflow-setups)
-- [Deduction Codes](#deduction-codes)
+- [Dispute Reasons](#dispute-reasons)
 - [Withholding Tax](#withholding-tax)
 
-## Installing from Appsource
+## Installing from AppSource
 Open your Microsoft Dynamics Business Central tenant.
 Search for Extension Management.
 From the extension management page, select 'AppSource Gallery'. This may take a minute or two to open.
@@ -40,7 +38,6 @@ From the list of apps, select 'BCP-TRADEASSIST-VRS', then select 'Request Subscr
 An email will be sent to the Braintree service desk.
 
 ## Number Series
-
 On installation, the system will create a new number series and insert it in the setup table. You can edit this if required.
 
 ![alt text](NoSeries.png)
@@ -67,11 +64,13 @@ For each recon administrator, fill in the fields:
 
 Note: it is a good idea to create separate payment batches for each administrator.
 
-## Deduction Codes
+## Dispute Reasons
 When processing vendor reconciliations, you have an option to make deductions from the invoices being settled (over and above payment discount, which is handled by standard business central functionality). To do this, you will need to configure deduction codes.
 From the Trade Assistant Setup page, select 'Deduction Codes' from the menu. The Return Reasons list will open.
 
-![alt text](openReasonCodes.png)
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 
 For each account that you would like to use as a deduction, you need to enter
 - Account type (default G/L account)
@@ -85,5 +84,11 @@ If you will be processing withholding tax for creditors:
 - Select a Withholding Tax provision account type
 - Select a withholding tax provision account number
 
+## Message to Recipient
+If you are not running Braintree's banking integration app, you may wish to configure the field 'Message to Recipient'. (The field will not be visible if you have installed the banking app). 
+
+The text captured in this field will be copied to the 'Message to Recipient' on the payment journal when creating a payment from a vendor reconciliation.
+
+![alt text](image-4.png)
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)

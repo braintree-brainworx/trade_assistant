@@ -1,5 +1,15 @@
+---
+layout: NewLayout
+title: Trade Assistant
+description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
+---
+
 # Trade Assistant
 Trade Assistant brings together useful functions related to the management of Supply Chain in Microsoft Dynamics 365 Business Central.
+
+![alt text](Overview.drawio.png)
+
+---
 
 ![alt text](image.png)
 
@@ -13,5 +23,4 @@ How to set up and run the Debtors Collection module
 How to set up and run Foreign Exchange Cover
 
 ## [Landed Cost](LandedCost/LandedCost.MD)
-(Coming Soon!)
 How to manage landed costs on inventory

@@ -1,3 +1,9 @@
+---
+layout: NewLayout
+title: Forward Exchange Contracts
+description: Support and documentation for Braintree's Forward exchange extension to Microsoft Dynamics 365 Business Central
+---
+
 # Forward Exchange Contracts
 
 The Forward Exchange Contracts module is a tool to assist importers to manage their foreign currency exposures on purchases. It provides options to reduce the risk posed by undpredictable exchange rates, improve cash flow forecasting and provide more accurate costing on imported inventory.

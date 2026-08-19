@@ -1,14 +1,13 @@
 # Configure Debtors Collections
 
-## Geting Started
-- [Installing from Appsource](#installing-from-appsource)
-- [How to request a license registration key](#how-to-request-a-licence-registration-key)
+- [Installing from AppSource](#installing-from-appsource)
+- [How to request a license registration key](#how-to-request-a-license-registration-key)
 - [Number Series](#number-series)
 - [Ageing Setups](#ageing-setups)
-- [Deduction Codes](#dispute-reasons)
-- [Updating Customer]()
+- [Dispute Reasons](#dispute-reasons)
+- [Updating Customers](#updating-customers)
 
-## Installing from Appsource
+## Installing from AppSource
 Open your Microsoft Dynamics Business Central tenant.
 Search for Extension Management.
 From the extension management page, select 'AppSource Gallery'. This may take a minute or two to open.
@@ -55,10 +54,9 @@ Add at least one setup definition:
  ![alt text](AgeingSetup.png)
 
 ## Dispute Reasons
-From the Trade Assistant Setup, click on Deduction Codes in the menu.
-The Reason Codes page will be displayed.
+From the Trade Assistant Setup, click on Dispute Status in the menu.
+The Dispute Statuses page will be displayed.
 Add new codes as required.
-Tick the field ‘Dispute Reason’ for those codes that will be applicable to Debtors collection.
 
 ## Updating Customers
 For each customer, set up the collections administrator for the account.

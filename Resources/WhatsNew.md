@@ -1,4 +1,77 @@
-## Release notes
+---
+layout: NewLayout
+title: Trade Assistant
+description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
+---
+
+## Release notes1
+
+**Release 28.0.20260623 (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost: Undo Receipt</summary>
+<ul>
+<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
+</ul></details>
+
+**Release 28.0.20260609 (28.0.1)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost: Undo Receipt</summary>
+<ul>
+<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
+</ul></details>
+
+**Release 27.5.20260527.1 (27.5.2)**
+<details style="font-size: 0.85em;">
+<summary>Vendor Recon Payment - Description</summary>
+<ul>
+<li>Description on Vendor line is set to vendor name</li>
+<li>Payment Reference on multi-line journal always uses Vendor Recon number.</li>
+</ul></details>
+
+**Release 27.4.20260511.1 (27.5.0)**
+<details style="font-size: 0.85em;">
+<summary>Vendor Recon Payment - message to recipient</summary>
+<ul>
+<li>New field on Trade Assistant Setup: Message to Recipient. Not visible if the Banking integration app is also installed</li>
+<li>When generating a payment from the Vendor Recon, the Message to Recipient column on the journal is populated from the Trade Assistant Setup.</li>
+</ul></details>
+
+**Release 27.4.20260409.1 (27.5.0)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost - Purchase Order</summary>
+<ul>
+<li>New flowfields added to purchase lines, summarising accrued values on receipts</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>Landed Cost - Setup Improvements</summary>
+<ul>
+<li>Added dedicated setup page to edit purchase accrual settings on general posting setups</li>
+<li>When activating accruals, GL and Item charges are activated automatically</li>
+<li>Added default accrual account. When changed, user has an option to update all general posting setups</li>
+<li>When a new General Posting Setup is created, purchase accrual account is copied from setup.</li>
+</ul></details>
+
+**Release 27.4.20260409.1 (27.4.2)**
+<details style="font-size: 0.85em;">
+<summary>Posted Sales Invoice List</summary>
+<ul>
+<li>Add Last Date Emailed to page</li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Dispute State</summary>
+<ul>
+<li>On Collections Link page, Reason Code is now linked to new table Dispute State</li>
+<li>When a reason is entered, the Dispute State on Customer Ledger Entry and posted invoice is updated.</li>
+</ul></details>
+
+**Release 27.4.20260409.1 (27.2.7)**
+<details style="font-size: 0.85em;">
+<summary>Landed Cost</summary>
+<ul>
+<li>Accrue item charges into GL provision accounts when primary products are received, and reverse accrual when item charges are invoiced</li>
+</ul></details>
 
 **Release 28.0.20260819.1 (28.0.2)**
 <details style="font-size: 0.85em;">
