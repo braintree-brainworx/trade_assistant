@@ -21,13 +21,6 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 <li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
 </ul></details>
 
-**Release 28.0.20260609 (28.0.1)**
-<details style="font-size: 0.85em;">
-<summary>Landed Cost: Undo Receipt</summary>
-<ul>
-<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
-</ul></details>
-
 **Release 27.5.20260527.1 (27.5.2)**
 <details style="font-size: 0.85em;">
 <summary>Vendor Recon Payment - Description</summary>
