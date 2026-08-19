@@ -6,6 +6,14 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 
 ## Release notes1
 
+**Release 28.0.20260819.1 (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>VRS: Bug with payment discount (click for details)</summary>
+<ul>
+<li>When payment is created from vendor recon, the discount due date was ignored.</li>
+<li>Bug fixed - discount is ignored if discount due date is after payment date on vendor recon header.</li>
+</ul></details>
+
 **Release 28.0.20260623 (28.0.2)**
 <details style="font-size: 0.85em;">
 <summary>Landed Cost: Undo Receipt</summary>
@@ -71,14 +79,6 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 <summary>Landed Cost</summary>
 <ul>
 <li>Accrue item charges into GL provision accounts when primary products are received, and reverse accrual when item charges are invoiced</li>
-</ul></details>
-
-**Release 28.0.20260819.1 (28.0.2)**
-<details style="font-size: 0.85em;">
-<summary>VRS: Bug with payment discount (click for details)</summary>
-<ul>
-<li>When payment is created from vendor recon, the discount due date was ignored.</li>
-<li>Bug fixed - discount is ignored if discount due date is after payment date on vendor recon header.</li>
 </ul></details>
 
 **Release 27.2.20260327.1 (27.2.7)**
