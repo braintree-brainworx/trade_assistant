@@ -6,6 +6,15 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 
 ## Release notes
 
+**Release 28.0.20260819.1 (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>VRS: Bug with payment discount (click for details)</summary>
+<ul>
+<li>When payment is created from vendor recon, the discount due date was ignored.</li>
+<li>Bug fixed - discount is ignored if discount due date is after payment date on vendor recon header.</li>
+</ul></details>
+## Release notes
+
 **Release 28.0.20260623 (28.0.2)**
 <details style="font-size: 0.85em;">
 <summary>Vendor Recon: Payment batch selection</summary>
@@ -20,13 +29,6 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 </ul></details>
 
 **Release 28.0.20260623 (28.0.2)**
-<details style="font-size: 0.85em;">
-<summary>Landed Cost: Undo Receipt</summary>
-<ul>
-<li>Undo Receipt on posted purchase receipt reverses accrual and removes charge assignment of services order </li>
-</ul></details>
-
-**Release 28.0.20260609 (28.0.1)**
 <details style="font-size: 0.85em;">
 <summary>Landed Cost: Undo Receipt</summary>
 <ul>
