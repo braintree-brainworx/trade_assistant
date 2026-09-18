@@ -4,7 +4,20 @@ title: Trade Assistant
 description: Enhanced functionality for financial administrators in Microsoft Dynamics 365 Business Central
 ---
 
-## Release notes1
+## Release notes
+
+**Release 28.0.20260623 (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>Vendor Recon: Payment batch selection</summary>
+<ul>
+<li>When selecting a payment batch from the user setup, or from the Vendor recon, the system checks if the batch contains a number series. If it does, the user is given the choice to clear the number series. If the user declines, an error is issued, and the user must select a different batch. </li>
+</ul></details>
+
+<details style="font-size: 0.85em;">
+<summary>Vendor Recon: Unmatch All</summary>
+<ul>
+<li>The function 'Unmatch All' will result in all entries being set to unmatched. Amounts to Match and Amounts to Apply are set to zero. </li>
+</ul></details>
 
 **Release 28.0.20260623 (28.0.2)**
 <details style="font-size: 0.85em;">
