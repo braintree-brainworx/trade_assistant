@@ -6,6 +6,13 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 
 ## Release notes
 
+**Release 28.0.20260924.x (28.0.2)**
+<details style="font-size: 0.85em;">
+<summary>DCM: Navigation (click for details)</summary>
+<ul>
+<li>Various cosmetic improvements to reduce clicks.</li>
+</ul></details>
+
 **Release 28.0.20260819.1 (28.0.2)**
 <details style="font-size: 0.85em;">
 <summary>VRS: Bug with payment discount (click for details)</summary>
@@ -13,7 +20,6 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 <li>When payment is created from vendor recon, the discount due date was ignored.</li>
 <li>Bug fixed - discount is ignored if discount due date is after payment date on vendor recon header.</li>
 </ul></details>
-## Release notes
 
 **Release 28.0.20260623 (28.0.2)**
 <details style="font-size: 0.85em;">
