@@ -7,6 +7,13 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 ## Release notes
 
 **Release 28.0.20260924.x (28.0.2)**
+
+<details style="font-size: 0.85em;">
+<summary>DCM: Navigation (click for details)</summary>
+<ul>
+<li>Various cosmetic improvements to reduce clicks.</li>
+</ul></details>
+
 <details style="font-size: 0.85em;">
 <summary>DCM: Navigation (click for details)</summary>
 <ul>
