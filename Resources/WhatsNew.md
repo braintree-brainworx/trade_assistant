@@ -11,13 +11,11 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 <details style="font-size: 0.85em;">
 <summary>DCM: Navigation (click for details)</summary>
 <ul>
-<li>Various cosmetic improvements to reduce clicks.</li>
-</ul></details>
-
-<details style="font-size: 0.85em;">
-<summary>DCM: Navigation (click for details)</summary>
-<ul>
-<li>Various cosmetic improvements to reduce clicks.</li>
+<li>1. Create a new collection note or existing open note directly from the Ageing dashboard.</li>
+<li>2. When a new note is created, transaction loading is automatically initiated.</li>
+<li>3. After creating a new note and loading documents, they will automatically be displayed without pressing F5.</li>
+<li>4. Promise-to-pay total is displayed on the collection note header.</li>
+<li>5. When collection note is closed, promise-to-pay date and amount are written to the customer ledger.</li>
 </ul></details>
 
 **Release 28.0.20260819.1 (28.0.2)**
