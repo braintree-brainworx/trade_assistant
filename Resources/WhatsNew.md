@@ -15,10 +15,9 @@ description: Enhanced functionality for financial administrators in Microsoft Dy
 <li>2. When a new note is created, transaction loading is automatically initiated.</li>
 <li>3. After creating a new note and loading documents, they will automatically be displayed without pressing F5.</li>
 <li>4. Promise-to-pay total is displayed on the collection note header.</li>
-<li>5. When collection note is closed, promise-to-pay date and amount are written to the corresponding customer ledger fields.
-6. Collection notes: option to email the note to the associated contact is added.
-7. Collection note: new function to apply promise-to-pay date to selected lines instead of document by document.
-</li>
+<li>5. When collection note is closed, promise-to-pay date and amount are written to the corresponding customer ledger fields.</li>
+<li>6. Collection notes: option to email the note to the associated contact is added.</li>
+<li>7. Collection note: new function to apply promise-to-pay date to selected lines instead of document by document.</li>
 </ul></details>
 
 **Release 28.0.20260819.1 (28.0.2)**
