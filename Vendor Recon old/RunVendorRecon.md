@@ -286,7 +286,7 @@ Click on 'Validate lines':
 
 This step attempts to match the supplier's coding for items to our coding.
 
-  Tip: use Item References (from the item card) to associate the supplier's item code to our item 
+    Tip: use Item References (from the item card) to associate the supplier's item code to our item 
 
 ### Match lines
 
