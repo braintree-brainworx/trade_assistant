@@ -14,6 +14,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 - [Capture Deductions](#capture-deductions)
 - [Calculate payments](#calculate-the-payment)
 - [Find a document](#find-a-document)
+- [Load and match incoming invoices](#matching-incoming-invoices)
   
 Search for 'Vendor Recon', and select the page. 
 It's a good idea to bookmark this page.
@@ -246,5 +247,48 @@ Enter a document number or external document number and press Enter. The system 
 ![alt text](image-1.png)
 
 You can open the recon by clicking on the recon number.
+
+## Matching Incoming Invoices
+Trade Assistant allows you to load suppliers' invoices, and match them against purchase orders.
+Search for 'Supplier Matching Sheets', and select the option:
+
+### Load the PDF files
+![alt text](Screenshots/image-7.png)
+
+A list of existing worksheets will be displayed. Click 'New' to create a new sheet.
+
+Tab past the Worksheet No. The system will assign a new number.
+Optionally, enter the import date. 
+Select a matching process: "Match invoice to order".
+Click on 'Upload PDF files'
+
+![alt text](Screenshots/image-9.png)
+
+Navigate to the folder where your invoices are stored. Select one or more invoices, then click 'Open':
+
+![alt text](Screenshots/image-10.png).
+
+The system will read and parse the invoices into the worksheet. When complete, the system will display a message, with the number of lines imported:
+
+![alt text](Screenshots/image-11.png)
+
+The system will load the following details from the invoices:
+- Supplier's document number
+- Our purchase order number
+- Supplier's product ID
+- Invoice line description
+- Invoice line amount, quantity and unit price.
+
+### Validate the data
+Click on 'Validate lines':
+
+![alt text](Screenshots/image-12.png)
+
+This step attempts to match the supplier's coding for items to our coding.
+
+  Tip: use Item References (from the item card) to associate the supplier's item code to our item code.
+
+### Match lines
+
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
