@@ -310,6 +310,73 @@ body {
       margin-bottom: 0;
     }
   }
+
+  // Callout styling - using custom div classes
+  .callout {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 0.5rem solid;
+    border-radius: 4px;
+    background-color: #f6f8fa;
+    
+    > :first-child {
+      margin-top: 0;
+    }
+    
+    > :last-child {
+      margin-bottom: 0;
+    }
+    
+    &.tip {
+      border-left-color: #0969da;
+      background-color: #f6f8fa;
+      
+      .callout-title {
+        color: #0969da;
+      }
+    }
+    
+    &.note {
+      border-left-color: #0969da;
+      background-color: #f6f8fa;
+      
+      .callout-title {
+        color: #0969da;
+      }
+    }
+    
+    &.warning {
+      border-left-color: #d1250c;
+      background-color: #fff8c5;
+      
+      .callout-title {
+        color: #d1250c;
+      }
+    }
+    
+    &.important {
+      border-left-color: #d1250c;
+      background-color: #fff8c5;
+      
+      .callout-title {
+        color: #d1250c;
+      }
+    }
+    
+    &.caution {
+      border-left-color: #da3633;
+      background-color: #ffebe6;
+      
+      .callout-title {
+        color: #da3633;
+      }
+    }
+    
+    .callout-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 .braintree-button {
