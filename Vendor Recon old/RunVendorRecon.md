@@ -13,6 +13,7 @@ description: Support and documentation for Braintree's Vendor Reconciliation ext
 - [Capture Deductions](#capture-deductions)
 - [Calculate payments](#calculate-the-payment)
 - [Find a document](#find-a-document)
+- [Load and match incoming invoices](#matching-incoming-invoices)
   
 Search for 'Vendor Recon', and select the page. 
 It's a good idea to bookmark this page.
@@ -82,6 +83,44 @@ This will create an entry for each transaction on the vendor’s account which i
   - Select the option ‘Import Statement’.
   - Navigate to the saved Excel file and select it.
   - The system will load the entries from the sheet into the recon lines. If it is able to find the document using the external document number, it will load the statement amount into the existing line.  If not, it will create a new line with the statement amount.
+
+
+### Option 3: Load PDF Statement
+The Vendor Reconciliation app works with most common statement layouts. Using the 'Load PDF Statement', transactions can be imported from a PDF copy of the vendor's statement, and matched against open transactions in the vendor ledger.
+
+From the Statements menu bar, select 'Load PDF Statements':
+
+![alt text](Screenshots/LoadPDFStatements.png)
+
+A new page, 'Vendor Statement Raw Data', will be opened:
+
+![alt text](Screenshots/image.png)
+
+Click on 'Select PDF':
+
+![alt text](Screenshots/image-1.png)
+
+Navigate to where the statement is saved, and select it:
+
+![alt text](Screenshots/image-2.png)
+
+Click OK. The system will open the pdf, and attempt to parse the data. When complete, a prompt will be displayed:
+
+![alt text](Screenshots/image-3.png)
+
+Click OK.
+
+You may remove entries if you wish to. If you are happy with the import, click on 'Apply to Recon'. 
+
+![alt text](Screenshots/image-5.png)
+
+This will transfer the records to your vendor recon, and attempt to match them to the vendor ledger, based on the document number.
+
+![alt text](Screenshots/image-4.png)
+
+Close the page to return to the vendor reconciliation.
+
+![alt text](Screenshots/image-6.png)
 
 ## Reconcile transactions
 Definition of fields on transactions
@@ -208,5 +247,48 @@ Enter a document number or external document number and press Enter. The system 
 ![alt text](image-1.png)
 
 You can open the recon by clicking on the recon number.
+
+## Matching Incoming Invoices
+Trade Assistant allows you to load suppliers' invoices, and match them against purchase orders.
+Search for 'Supplier Matching Sheets', and select the option:
+
+### Load the PDF files
+![alt text](Screenshots/image-7.png)
+
+A list of existing worksheets will be displayed. Click 'New' to create a new sheet.
+
+Tab past the Worksheet No. The system will assign a new number.
+Optionally, enter the import date. 
+Select a matching process: "Match invoice to order".
+Click on 'Upload PDF files'
+
+![alt text](Screenshots/image-9.png)
+
+Navigate to the folder where your invoices are stored. Select one or more invoices, then click 'Open':
+
+![alt text](Screenshots/image-10.png).
+
+The system will read and parse the invoices into the worksheet. When complete, the system will display a message, with the number of lines imported:
+
+![alt text](Screenshots/image-11.png)
+
+The system will load the following details from the invoices:
+- Supplier's document number
+- Our purchase order number
+- Supplier's product ID
+- Invoice line description
+- Invoice line amount, quantity and unit price.
+
+### Validate the data
+Click on 'Validate lines':
+
+![alt text](Screenshots/image-12.png)
+
+This step attempts to match the supplier's coding for items to our coding.
+
+  Tip: use Item References (from the item card) to associate the supplier's item code to our item 
+
+### Match lines
+
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
