@@ -4,7 +4,7 @@ title: Vendor Reconciliation for Business Central
 description: Support and documentation for Braintree's Vendor Reconciliation extension to Microsoft Dynamics 365 Business Central
 ---
 
-# Run Vendor Reconciliation
+# Running Vendor Reconciliations
 
 ## Content
 - [Start a new vendor reconciliation](#start-a-new-vendor-recon)
@@ -24,13 +24,13 @@ The vendor recon list page will be displayed, showing active recons. The page in
 
 If you do not see the Views list, open the Filter panel for the page.
 
-## Start a new Vendor Recon
+## Start a new Vendor Reconciliation document
 From the list page, click on New to open the recon page
 
-![alt text](VendorReconCard.png)
+![alt text](Screenshots/ReconCard.png)
 
 - Tab off the No. field. A document number will be assigned. Date fields and batch fields will be initialised.
-- Select the vendor. The vendor name, currency and statement number will be assigned
+- Select the vendor. The vendor name, currency and statement sequence number will be assigned
 
 ## Load transactions
 The transactions to be matched come from two sources:
@@ -58,7 +58,7 @@ This will create an entry for each transaction on the vendor’s account which i
 
 ### Option 1: Load Vendor Statement manually
 - Update the recon header.
-    - If necessary, amend the statement date to reflect the date on the vendor’s document.
+    - If necessary, amend the statement date to reflect the date on the vendor’s statement document.
     - Capture the total of the vendor’s statement in the field ‘Closing balance per statement’.
 - Capture the transactions listed in the vendor statement.
     - If the recon contains a line loaded from the system, locate the entry and capture the value of the transaction as per the statement, into the field ‘Statement Amount’. Alternatively, tick the field ‘Match’ – the ledger amount will be automatically inserted into the Statement amount.
@@ -83,6 +83,43 @@ This will create an entry for each transaction on the vendor’s account which i
   - Select the option ‘Import Statement’.
   - Navigate to the saved Excel file and select it.
   - The system will load the entries from the sheet into the recon lines. If it is able to find the document using the external document number, it will load the statement amount into the existing line.  If not, it will create a new line with the statement amount.
+
+### Option 3: Load PDF Statement
+The Vendor Reconciliation app works with most common statement layouts. Using the 'Load PDF Statement', transactions can be imported from a PDF copy of the vendor's statement, and matched against open transactions in the vendor ledger.
+
+From the Statements menu bar, select 'Load PDF Statements':
+
+![alt text](Screenshots/LoadPDFStatements.png)
+
+A new page, 'Vendor Statement Raw Data', will be opened:
+
+![alt text](Screenshots/image.png)
+
+Click on 'Select PDF':
+
+![alt text](Screenshots/image-1.png)
+
+Navigate to where the statement is saved, and select it:
+
+![alt text](Screenshots/image-2.png)
+
+Click OK. The system will open the pdf, and attempt to parse the data. When complete, a prompt will be displayed:
+
+![alt text](Screenshots/image-3.png)
+
+Click OK.
+
+You may remove entries if you wish to. If you are happy with the import, click on 'Apply to Recon'. 
+
+![alt text](Screenshots/image-5.png)
+
+This will transfer the records to your vendor recon, and attempt to match them to the vendor ledger, based on the document number.
+
+![alt text](Screenshots/image-4.png)
+
+Close the page to return to the vendor reconciliation.
+
+![alt text](Screenshots/image-6.png)
 
 ## Reconcile transactions
 Definition of fields on transactions
