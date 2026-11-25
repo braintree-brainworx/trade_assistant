@@ -286,11 +286,20 @@ Click on 'Validate lines':
 
 This step attempts to match the supplier's coding for items to our coding.
 
-<div class="callout tip">
-<p><strong>Tip:</strong> Use Item References (from the item card) to associate the supplier's item code to our item.</p>
-</div>
+    Tip: Use Item References (from the item card) to associate the supplier's item code to our item.
+
+The lines where item codes have been identified will have a status of 'Checked'.
 
 ### Match lines
+This step attempts to match an invoice line to a purchase order.
+Select one or more lines, then click on 'Match Lines':
 
+![alt text](Screenshots/image-13.png)
+
+The system will attempt to find purchase orders matching the selected lines. It will compare the line quantity and unit price to the imported line, and check that the order line has not already been received.
+
+![alt text](Screenshots/image-14.png)
+
+Lines which are matched 
 
 [**⬆️ Back to Top**](#content) &nbsp;&nbsp;&nbsp;&nbsp; [**🏠 Home**](/trade_assistant)
